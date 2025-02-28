@@ -1,0 +1,16 @@
+<form #registerForm="ngForm"  autocomplete="off">
+<h2 class="text-center text-primary">Signup</h2>
+<hr>
+<div class="mb-3 form-floating">
+    <input type="text" class="form-control" placeholder="userName" name="userName" [(ngModel)]="model.userName">
+    <label for="userName">User Name</label>
+</div>
+<div class="mb-3 form-floating">
+    <input type="password" class="form-control" placeholder="password" name="password" [(ngModel)]="model.password">
+    <label>Password</label>
+</div>
+<div class="form-group text-center">
+    <button class="btn btn-success me-2" type="button" (click)="register()">Register</button>
+    <button class="btn btn-default me-2" type="button" (click)="cancel()">Cancel</button>
+</div>
+</form>
